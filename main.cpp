@@ -1,4 +1,5 @@
 /*
+
 Problem 1
 
 1. Declare an integer type variable name intNumber and assign
@@ -16,6 +17,10 @@ value of A.
 6. Lastly, print the values of all declared variables and their sizes
 using sizeof(variable name) function.
  */
+
+
+
+
 
 #include <iostream>
 using namespace std;
@@ -153,10 +158,102 @@ int N;
  2 5
  Output:
  t=2.47059
+
  */
 
+float x, y, t;
+ cin >> x >> y;
+ t = 3 * (x*x+3)/(y/4)+3;
+ cout << "t= " << t << endl;
+
+/*
+//7th
+
+double diameter, area;
+ cin >> diameter >> area;
+ double p = 3.14159265358979323846;
+ area = p * (diameter * diameter);
+
+cout << "area is equal to " << area << endl;
 
 
+
+
+ //8th
+ float v0;
+ float v1;
+ float time;
+ cin >> v0 >> v1 >> time;
+ float av = (v1-v0)/time;
+ cout << "average acceleration: " << av << endl;
+
+
+
+ //9th
+
+ float distance;
+ float f_e;
+ float price;
+ cin >> distance >> price >> f_e;
+ float cost = (distance/f_e)*price;
+ cout << "cost is equal to " << cost << endl;
+
+
+ //10th
+ double n1 = 1.13e3;
+ double n2 = 4112-4;
+ cout << "num1 is: " << n1 << "and num2 is: " << n2 << endl;
+*/
+
+//11th
+
+ float a1 = 3.75;
+ int b1 = a1;
+ cout << b1 << endl;
+ float result = b1 - a1;
+ cout << "fractional part is " << result << endl;
+
+
+
+//12th
+
+int total_students;
+ cin >> total_students;
+ int first_10_groups = total_students / 11;
+ int last_group = total_students % 11;
+ cout << "in first group: " << first_10_groups << endl;
+cout << "in last group: " << last_group << endl;
+
+
+
+ //13th
+ #include "math.h";
+
+ float side;
+ cin >> side;
+ float area_h = (3*sqrt(3)/2)*(side*side);
+
+cout << "the area of hexagon is " << area_h << endl;
+
+//14th
+ int a2, b2;
+ cout << "enter a and b ";
+ cin >> a2 >> b2;
+
+ a2 = a2+b2;
+ b2 = a2-b2;
+ a2 = a2-b2;
+
+ cout << "A is " << a2 << " and " << "B is " << b2 << endl;
+
+//15th
+ int x1;
+ int y1;
+ int x2;
+ int y2;
+ cin >> x1 >> y1 >> x2 >> y2;
+ float e_distance = sqrt((x2 - x1) * (x2 * x1) + (y2 - y1) * (y2 - y1));
+ cout << "output: " << e_distance << endl;
 
 
 
