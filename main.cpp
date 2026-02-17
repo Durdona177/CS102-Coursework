@@ -252,7 +252,7 @@ cout << "the area of hexagon is " << area_h << endl;
  int x2;
  int y2;
  cin >> x1 >> y1 >> x2 >> y2;
- float e_distance = sqrt((x2 - x1) * (x2 * x1) + (y2 - y1) * (y2 - y1));
+ float e_distance = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
  cout << "output: " << e_distance << endl;
 
 
