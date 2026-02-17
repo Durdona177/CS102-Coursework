@@ -260,3 +260,138 @@ cout << "the area of hexagon is " << area_h << endl;
 
  return 0;
 }
+
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+using namespace std;
+
+
+int main() {
+    /*
+        // 2nd problem
+        cout << "Enter 3 numbers: ";
+        double x1, x2, x3;
+        cin >> x1>> x2>> x3;
+        double m = (x1 + x2 +x3)/3.0;
+        double var = (pow((x1-m), 2) + pow((x2-m), 2) + pow((x3-m), 2));
+        cout << "output: " << var << endl;
+
+        //3rd problem
+        int x;
+        cin >> x;
+        cout << "enter a number: " << endl;
+        if (x >0)
+            cout << x << "is positive" << endl;
+        else if (x <0)
+            cout << x << " is negative" << endl;
+        else
+            cout << x << "is zero" << endl;
+
+
+    //4th problem
+
+        int d;
+        cout << "enter a number: " << endl;
+        cin >> d;
+        if (d % 2 == 0)
+            cout << "even number" << endl;
+        else
+            cout << "odd number" << endl;
+
+
+    //5th problem
+        int b, c;
+        cout << "enter 2 numbers: " << endl;
+        cin >> b >> c;
+        if (b > c)
+            cout << "b is greater number" << endl;
+        else if (b < c)
+            cout << "c is smaller number" << endl;
+        else
+            cout << "numbers are equal" << endl;
+
+
+    //6th problem
+        int n1, n2, n3;
+        cout << "enter 3 numbers: " << endl;
+        cin >> n1 >> n2 >> n3;
+        if (n1 > n2 && n1 > n3)
+            cout << "n1 is greatest" << endl;
+        else if (n2 < n1 && n2 < n3)
+            cout << "n2 is greatest" << endl;
+        else
+            cout << "n3 is greatest" << endl;
+
+
+
+    //7th problem
+
+        int s;
+        cout << "enter the speed: " << endl;
+        cin >> s;
+        if (s <= 20)
+            cout << "too slow" << endl;
+        else if (s >= 80)
+            cout << "too fast" << endl;
+        else
+            cout << "just right" << endl;
+
+
+
+     //10th problem
+        int i1, i2;
+        cout << "enter 2 numbers: " << endl;
+        cin >> i1 >> i2;
+        if (i1 % i2 == 0)
+            cout << i1 << " is divisible by " << i2 << endl;
+        else
+            cout << i1 << " is not divisible by " << i2 << endl;
+        */
+
+
+    //11th problem
+    char s1;
+    cout << "enter command: " << endl;
+    cin >> s1;
+    s1 = tolower(s1);
+
+    if (s1 == 'g' || s1 == 'G') {
+        cout << "Go!" << endl;
+    }
+
+    else if (s1 == 'y') {
+        cout << "Get ready!" << endl;
+    }
+    else if (s1 == 'r' || s1 == 'R') {
+        cout << "Stop!" << endl;
+    }
+    else
+        cout << "Invalid command!" << endl;
+
+
+    //11th problem with switch
+    char ch;
+    cout << "enter command: " << endl;
+    cin >> ch;
+    switch (ch) {
+        case 'g':
+        case 'G':
+            cout << "Go!" << endl;
+            break;
+        case 'y':
+        case 'Y':
+            cout << "Get ready!" << endl;
+            break;
+        case 'r':
+        case 'R':
+            cout << "Stop!" << endl;
+            break;
+
+    }
+
+
+
+
+    return 0;
+}
